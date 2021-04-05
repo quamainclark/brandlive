@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import PersonalInfoPage from './containers/PersonalInfo';
-// import ChatRoomPage from './containers/ChatRoom';
+import ChatRoomPage from './containers/ChatRoom';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <Redirect to='/personalInfo' />
         </Route>
         <Route exact path='/personalInfo' component={PersonalInfoPage} />
-        {/* <Route exact path='/chatRoom' component={ChatRoomPage} /> */}
+        <Route exact path='/chatRoom' component={ChatRoomPage} />
       </Switch>
     </Router>
   );
